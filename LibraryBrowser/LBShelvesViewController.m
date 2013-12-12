@@ -20,39 +20,29 @@
 
 @implementation LBShelvesViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.title = [NSString stringWithFormat:@"Shelf No: %@",self.selectedLibraryName];
     self.currentPredicate = [NSPredicate predicateWithBlock:^BOOL(Shelf * shelf, NSDictionary *bindings) {
         return (self.selectedLibraryName == shelf.atLibrary.name);
     }];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-
-
+#pragma mark - UI TABLE VIEW DELEGATE
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //Get Name of library and set that to the nextPredicate
     Shelf * shelf = [self.fetchedResultsController objectAtIndexPath:indexPath];
     self.selectedShelfNumber = shelf.number;
+    self.selectedShelf = shelf;
     [self performSegueWithIdentifier:@"shelvesToBooks" sender:self];
 }
+
+//This cell configuration is the only part that changes from the superclass, it gets data from the fetched results controller and uses it to configure each cell
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 {
@@ -62,14 +52,18 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    //pass all necessary data to the next VC
     LBViewController * nextController = segue.destinationViewController;
     nextController.managedObjectContext = self.managedObjectContext;
     nextController.selectedLibraryName = self.selectedLibraryName;
+    nextController.selectedLibrary = self.selectedLibrary;
+    nextController.selectedShelf = self.selectedShelf;
     nextController.selectedShelfNumber = self.selectedShelfNumber;
 }
 
 #pragma mark - Fetched Results Controller
 
+//Overriding these two methods was very easy thanks to modularization and the use of #define
 
 - (NSEntityDescription *) getEntityDescription {
     NSEntityDescription *entity = [NSEntityDescription entityForName:ENTITY inManagedObjectContext:self.managedObjectContext];

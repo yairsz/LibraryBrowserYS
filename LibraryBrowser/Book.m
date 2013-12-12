@@ -23,6 +23,7 @@
 - (void) enshelve: (Shelf *) shelf{
     self.atShelf = shelf;
     self.enshelved = [NSNumber numberWithInt:1];
+    
 }
 
 - (void) unshelve{

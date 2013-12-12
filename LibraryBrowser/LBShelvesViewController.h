@@ -10,5 +10,6 @@
 
 @interface LBShelvesViewController : LBViewController
 
+//Thanks to inheritance from LB VC all the needed properties are already part of this class
 
 @end

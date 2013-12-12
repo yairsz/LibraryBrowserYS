@@ -14,7 +14,6 @@
 		B01D1F7E185930EE009B7081 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B01D1F7D185930EE009B7081 /* main.m */; };
 		B01D1F82185930EE009B7081 /* LBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B01D1F81185930EE009B7081 /* LBAppDelegate.m */; };
 		B01D1F85185930EE009B7081 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01D1F83185930EE009B7081 /* Main_iPhone.storyboard */; };
-		B01D1F88185930EE009B7081 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01D1F86185930EE009B7081 /* Main_iPad.storyboard */; };
 		B01D1F8B185930EE009B7081 /* LBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01D1F8A185930EE009B7081 /* LBViewController.m */; };
 		B01D1F8D185930EE009B7081 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B01D1F8C185930EE009B7081 /* Images.xcassets */; };
 		B01D1F94185930EE009B7081 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01D1F93185930EE009B7081 /* XCTest.framework */; };
@@ -25,11 +24,11 @@
 		B01D1FB6185932CF009B7081 /* LibraryModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B01D1FB4185932CF009B7081 /* LibraryModel.xcdatamodeld */; };
 		B02350E9185947D7005D2A35 /* LBShelvesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02350E8185947D7005D2A35 /* LBShelvesViewController.m */; };
 		B02350EC185947F2005D2A35 /* LBBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02350EB185947F2005D2A35 /* LBBooksViewController.m */; };
-		B02350F018594BD1005D2A35 /* NOtes in Resources */ = {isa = PBXBuildFile; fileRef = B02350EF18594BD1005D2A35 /* NOtes */; };
 		B02350F318594D03005D2A35 /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = B02350F218594D03005D2A35 /* Library.m */; };
 		B02350F618594D03005D2A35 /* Shelf.m in Sources */ = {isa = PBXBuildFile; fileRef = B02350F518594D03005D2A35 /* Shelf.m */; };
 		B02350F918594D03005D2A35 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = B02350F818594D03005D2A35 /* Book.m */; };
 		B02350FF18595AED005D2A35 /* librariesDatabase.json in Resources */ = {isa = PBXBuildFile; fileRef = B02350FE18595AED005D2A35 /* librariesDatabase.json */; };
+		B02351051859BC1B005D2A35 /* CRUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02351041859BC1B005D2A35 /* CRUDViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		B01D1F80185930EE009B7081 /* LBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBAppDelegate.h; sourceTree = "<group>"; };
 		B01D1F81185930EE009B7081 /* LBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBAppDelegate.m; sourceTree = "<group>"; };
 		B01D1F84185930EE009B7081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		B01D1F87185930EE009B7081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		B01D1F89185930EE009B7081 /* LBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBViewController.h; sourceTree = "<group>"; };
 		B01D1F8A185930EE009B7081 /* LBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBViewController.m; sourceTree = "<group>"; };
 		B01D1F8C185930EE009B7081 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 		B02350E8185947D7005D2A35 /* LBShelvesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBShelvesViewController.m; sourceTree = "<group>"; };
 		B02350EA185947F2005D2A35 /* LBBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBooksViewController.h; sourceTree = "<group>"; };
 		B02350EB185947F2005D2A35 /* LBBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBooksViewController.m; sourceTree = "<group>"; };
-		B02350EF18594BD1005D2A35 /* NOtes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOtes; sourceTree = "<group>"; };
 		B02350F118594D03005D2A35 /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
 		B02350F218594D03005D2A35 /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
 		B02350F418594D03005D2A35 /* Shelf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shelf.h; sourceTree = "<group>"; };
@@ -76,6 +73,8 @@
 		B02350F718594D03005D2A35 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		B02350F818594D03005D2A35 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		B02350FE18595AED005D2A35 /* librariesDatabase.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = librariesDatabase.json; sourceTree = "<group>"; };
+		B02351031859BC1B005D2A35 /* CRUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUDViewController.h; sourceTree = "<group>"; };
+		B02351041859BC1B005D2A35 /* CRUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUDViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +138,6 @@
 				B01D1F81185930EE009B7081 /* LBAppDelegate.m */,
 				B02350FE18595AED005D2A35 /* librariesDatabase.json */,
 				B01D1F83185930EE009B7081 /* Main_iPhone.storyboard */,
-				B01D1F86185930EE009B7081 /* Main_iPad.storyboard */,
 				B02350EE18594A37005D2A35 /* ViewControllers */,
 				B01D1FB4185932CF009B7081 /* LibraryModel.xcdatamodeld */,
 				B02350ED18594A22005D2A35 /* Entities */,
@@ -187,7 +185,6 @@
 				B02350F518594D03005D2A35 /* Shelf.m */,
 				B02350F118594D03005D2A35 /* Library.h */,
 				B02350F218594D03005D2A35 /* Library.m */,
-				B02350EF18594BD1005D2A35 /* NOtes */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -195,6 +192,8 @@
 		B02350EE18594A37005D2A35 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B02351031859BC1B005D2A35 /* CRUDViewController.h */,
+				B02351041859BC1B005D2A35 /* CRUDViewController.m */,
 				B02350E7185947D7005D2A35 /* LBShelvesViewController.h */,
 				B02350E8185947D7005D2A35 /* LBShelvesViewController.m */,
 				B02350EA185947F2005D2A35 /* LBBooksViewController.h */,
@@ -282,10 +281,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B01D1F88185930EE009B7081 /* Main_iPad.storyboard in Resources */,
 				B01D1F8D185930EE009B7081 /* Images.xcassets in Resources */,
 				B01D1F85185930EE009B7081 /* Main_iPhone.storyboard in Resources */,
-				B02350F018594BD1005D2A35 /* NOtes in Resources */,
 				B02350FF18595AED005D2A35 /* librariesDatabase.json in Resources */,
 				B01D1F7C185930EE009B7081 /* InfoPlist.strings in Resources */,
 			);
@@ -310,6 +307,7 @@
 				B02350F918594D03005D2A35 /* Book.m in Sources */,
 				B01D1F7E185930EE009B7081 /* main.m in Sources */,
 				B01D1F8B185930EE009B7081 /* LBViewController.m in Sources */,
+				B02351051859BC1B005D2A35 /* CRUDViewController.m in Sources */,
 				B02350E9185947D7005D2A35 /* LBShelvesViewController.m in Sources */,
 				B02350F618594D03005D2A35 /* Shelf.m in Sources */,
 				B02350F318594D03005D2A35 /* Library.m in Sources */,
@@ -351,14 +349,6 @@
 				B01D1F84185930EE009B7081 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		B01D1F86185930EE009B7081 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B01D1F87185930EE009B7081 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		B01D1F9C185930EE009B7081 /* InfoPlist.strings */ = {
