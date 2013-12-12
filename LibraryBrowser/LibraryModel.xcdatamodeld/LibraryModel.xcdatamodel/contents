@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3400" systemVersion="13A603" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Book" representedClassName="Book" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enshelved" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="atLibrary" maxCount="1" deletionRule="Nullify" destinationEntity="Library" inverseName="books" inverseEntity="Library" syncable="YES"/>
+        <relationship name="atShelf" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Shelf" inverseName="books" inverseEntity="Shelf" syncable="YES"/>
+    </entity>
+    <entity name="Library" representedClassName="Library" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Book" inverseName="atLibrary" inverseEntity="Book" syncable="YES"/>
+        <relationship name="shelves" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Shelf" inverseName="atLibrary" inverseEntity="Shelf" syncable="YES"/>
+    </entity>
+    <entity name="Shelf" representedClassName="Shelf" syncable="YES">
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="atLibrary" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Library" inverseName="shelves" inverseEntity="Library" syncable="YES"/>
+        <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Book" inverseName="atShelf" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Book" positionX="340" positionY="81" width="128" height="133"/>
+        <element name="Library" positionX="-135" positionY="90" width="128" height="88"/>
+        <element name="Shelf" positionX="99" positionY="186" width="128" height="88"/>
+    </elements>
+</model>

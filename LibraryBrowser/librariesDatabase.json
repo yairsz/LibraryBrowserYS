@@ -1,0 +1,133 @@
+{
+    "George H. W. Bush Library" : {
+        "1" : [
+               {
+               "title" : "Foundation",
+               "author" : "Isaac Asimov"
+               },
+               {
+               "title" : "Second Foundation",
+               "author" : "Isaac Asimov"
+               },
+               {
+               "title" : "Foundation and Empire",
+               "author" : "Isaac Asimov"
+               }],
+        "2" : [
+               {
+               "title" : "Forward the Foundation",
+               "author" : "Isaac Asimov"
+               },
+               {
+               "title" : "Foundation and Earth",
+               "author" : "Isaac Asimov"
+               },
+               {
+               "title" : "Foundation's Edge",
+               "author" : "Isaac Asimov"
+               }],
+        "3" : [
+               {
+               "title" : "The End of Eternity",
+               "author" : "Isaac Asimov"
+               },
+               {
+               "title" : "I, Robot",
+               "author" : "Isaac Asimov"
+               },
+               {
+               "title" : "The Robots of Dawn",
+               "author" : "Isaac Asimov"
+               }]
+    },
+    "William Clinton Library" : {
+        "1" : [
+               {
+               "title" : "Dune",
+               "author" : "Frank Herbert"
+               },
+               {
+               "title" : "Dune Messiah",
+               "author" : "Frank Herbert"
+               },
+               {
+               "title" : "Children of Dune",
+               "author" : "Frank Herbert"
+               }],
+        "2" : [
+               {
+               "title" : "God Emperor of Dune",
+               "author" : "Frank Herbert"
+               },
+               {
+               "title" : "Heretics of Dune",
+               "author" : "Frank Herbert"
+               },
+               {
+               "title" : "Chapterhouse: Dune",
+               "author" : "Frank Herbert"
+               }],
+        "3" : [
+               {
+               "title" : "The Lazarus Effect",
+               "author" : "Frank Herbert"
+               },
+               {
+               "title" : "Destination: Void",
+               "author" : "Frank Herbert"
+               },
+               {
+               "title" : "The Jesus Incident",
+               "author" : "Frank Herbert"
+               }]
+    },
+    "George W. Bush Library" : {
+        "1" : [
+               {
+               "title" : "2001: A Space Odyssey",
+               "author" : "Arthur C. Clarke"
+               },
+               {
+               "title" : "2010: Odissey Two",
+               "author" : "Arthur C. Clarke"
+               },
+               {
+               "title" : "2061: Odyssey Three",
+               "author" : "Arthur C. Clarke"
+               }],
+        "2" : [
+               {
+               "title" : "3001: The Final Odyssey",
+               "author" : "Arthur C. Clarke"
+               },
+               {
+               "title" : "The City and the Stars",
+               "author" : "Arthur C. Clarke"
+               },
+               {
+               "title" : "Rendezvous with Rama",
+               "author" : "Arthur C. Clarke"
+               }],
+        "3" : [
+               {
+               "title" : "Rama II",
+               "author" : "Arthur C. Clarke"
+               },
+               {
+               "title" : "The Garden of Rama",
+               "author" : "Arthur C. Clarke"
+               },
+               {
+               "title" : "Rama Revealed",
+               "author" : "Arthur C. Clarke"
+               }]
+    }
+    
+}
+
+
+
+
+
+
+
